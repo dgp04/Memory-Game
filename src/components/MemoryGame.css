@@ -7,13 +7,13 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    gap: 40px;
+    grid-template-columns: repeat(4, 150px);
     margin-top: 20px;
+    gap: 15px;
 }
 
 .card {
-    height: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,4 +92,40 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        justify-content: space-around; /* Espaciado más uniforme */
+        grid-template-columns: repeat(2, calc(33.33% - 10px));
+
+    }
+
+    .card {
+        width: calc(33.33% - 10px); /* 3 cartas por fila */
+        padding-top: calc(33.33% - 10px); /* Mantener proporción */
+        font-size: 1.5rem; /* Reducir tamaño de la fuente */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    footer button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para pantallas de tamaño medio, como tabletas */
+@media (max-width: 1024px) {
+    .grid {
+        justify-content: space-around; /* Centrado de cartas */
+        grid-template-columns: repeat(3, calc(25% - 10px));
+    }
+
+    .card {
+        width: calc(25% - 10px); /* 4 cartas por fila */
+        padding-top: calc(25% - 10px); /* Mantener proporción */
+        font-size: 1.8rem;
+    }
 }

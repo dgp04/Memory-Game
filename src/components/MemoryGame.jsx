@@ -62,7 +62,6 @@ export function MemoryGame(){
 
     return (
         <div className="memory-game">
-            <h1>Memory Game</h1>
             <button onClick={resetGame}>Reiniciar</button>
             <div className="grid">
                 {
