@@ -117,6 +117,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 cartas por fila */
         gap: 40px; /* Espacio entre las cartas */
+        margin-right: 30px;
         justify-content: space-between;
     }
 
