@@ -20,16 +20,20 @@ You can play the game online here: https://dgp04-memory-game.vercel.app/
 Follow these steps to run the game locally:
 
 1. Clone this repository:
+   ```bash
    git clone https://github.com/your-username/memory-card-game.git
 
 2. Navigate to the project folder:
-  cd memory-card-game
+   ```bash
+   cd memory-card-game
 
 3. Install the required dependencies:
-  npm install
+   ```bash
+   npm install
 
 4. Start the development server:
-   npm start
+   ```bash
+   npm run dev
 
 ## Technologies Used
 - React - for building the user interface.
